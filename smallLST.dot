@@ -1,0 +1,207 @@
+digraph G {
+	graph [bb="0,0,839,2364"];
+	node [label="\N",
+		shape=oval
+	];
+	n1	 [height=1.3356,
+		label="Node1\nmodule = nn.CAddTable\lreverseMap = {}\lmapindex = {Node5,Node6}",
+		pos="503,760",
+		tooltip="[./model/LSTM.lua]:43_",
+		width=3.4507];
+	n2	 [height=1.3356,
+		label="Node2\ninput = {}\lmapindex = {Node1,Node3,Node4}\lreverseMap = {}",
+		pos="670,48",
+		tooltip="[[C]]:-1_",
+		width=4.2226];
+	n1 -> n2	 [pos="e,592.48,89.397 503,711.7 503,662.92 503,584.64 503,517 503,517 503,517 503,281 503,211.95 506.2,187.71 547,132 557.12,118.19 570.27,\
+105.95 584.2,95.409"];
+	n8	 [height=1.041,
+		label="Node8\nmodule = nn.Tanh\lreverseMap = {}",
+		pos="619,638",
+		tooltip="[./model/LSTM.lua]:48_",
+		width=2.3354];
+	n1 -> n8	 [pos="e,586.47,672.66 545.86,714.66 556.88,703.27 568.67,691.06 579.5,679.86"];
+	n3	 [height=1.3356,
+		label="Node3\nmodule = nn.CMulTable\lreverseMap = {}\lmapindex = {Node7,Node8}",
+		pos="704,516",
+		tooltip="[./model/LSTM.lua]:48_",
+		width=3.4507];
+	n3 -> n2	 [pos="e,750.01,89.148 776.86,476.99 792.97,464.91 807.93,449.92 817,432 832.26,401.86 818.5,389.74 817,356 812.54,255.93 844.64,217.23 \
+792,132 783.36,118.01 771.39,105.82 758.29,95.404"];
+	n15	 [height=1.041,
+		label="Node15\nmodule = nn.Dropout(0.100000)\lreverseMap = {}",
+		pos="670,394",
+		tooltip="[./model/LSTM.lua]:56_",
+		width=3.8416];
+	n3 -> n15	 [pos="e,680.36,431.56 690.66,467.92 688.17,459.14 685.58,449.97 683.1,441.22"];
+	n4	 [height=1.041,
+		label="Node4\nmodule = nn.LogSoftMax\lreverseMap = {}",
+		pos="670,170",
+		tooltip="[./model/LSTM.lua]:58_",
+		width=3.1506];
+	n4 -> n2	 [pos="e,670,96.503 670,132.34 670,124.22 670,115.42 670,106.68"];
+	n5	 [height=1.3356,
+		label="Node5\nmodule = nn.CMulTable\lreverseMap = {}\lmapindex = {Node10,Node11}",
+		pos="218,892",
+		tooltip="[./model/LSTM.lua]:44_",
+		width=3.7034];
+	n5 -> n1	 [pos="e,423.78,797.14 299.67,853.75 335.61,837.35 377.9,818.06 414.58,801.33"];
+	n6	 [height=1.3356,
+		label="Node6\nmodule = nn.CMulTable\lreverseMap = {}\lmapindex = {Node12,Node13}",
+		pos="503,892",
+		tooltip="[./model/LSTM.lua]:45_",
+		width=3.7034];
+	n6 -> n1	 [pos="e,503,808.48 503,843.7 503,835.54 503,826.99 503,818.6"];
+	n7	 [height=1.041,
+		label="Node7\nmodule = nn.Sigmoid\lreverseMap = {}",
+		pos="742,760",
+		tooltip="[./model/LSTM.lua]:39_",
+		width=2.6788];
+	n7 -> n3	 [pos="e,711.41,564.2 736.27,722.51 730.1,683.23 720.21,620.21 713,574.3"];
+	n8 -> n3	 [pos="e,671.71,562.58 643.81,601.97 650.7,592.25 658.33,581.47 665.79,570.94"];
+	n9	 [height=1.041,
+		label="decoder (9)\nmodule = nn.Linear(30 -> 10)\lreverseMap = {}",
+		pos="670,282",
+		tooltip="[./model/LSTM.lua]:57_",
+		width=3.5652];
+	n9 -> n4	 [pos="e,670,207.84 670,244.37 670,235.93 670,226.83 670,218.01"];
+	n10	 [height=1.041,
+		label="Node10\nmodule = nn.Sigmoid\lreverseMap = {}",
+		pos="219,1014",
+		tooltip="[./model/LSTM.lua]:38_",
+		width=2.6788];
+	n10 -> n5	 [pos="e,218.4,940.5 218.69,976.34 218.63,968.22 218.55,959.42 218.48,950.68"];
+	n11	 [height=1.041,
+		label="Node11\nmodule = nn.Identity\lreverseMap = {}",
+		pos="94,1726",
+		tooltip="[./model/LSTM.lua]:10_",
+		width=2.6117];
+	n11 -> n5	 [pos="e,150.5,933.53 94,1688.5 94,1641.1 94,1555.9 94,1483 94,1483 94,1483 94,1135 94,1063.8 78.231,1038.1 113,976 120.5,962.61 131.11,\
+950.61 142.74,940.16"];
+	n12	 [height=1.041,
+		label="Node12\nmodule = nn.Sigmoid\lreverseMap = {}",
+		pos="431,1014",
+		tooltip="[./model/LSTM.lua]:37_",
+		width=2.6788];
+	n12 -> n6	 [pos="e,475.13,939.45 452.41,977.32 457.92,968.13 463.99,958.02 469.94,948.1"];
+	n13	 [height=1.041,
+		label="Node13\nmodule = nn.Tanh\lreverseMap = {}",
+		pos="630,1014",
+		tooltip="[./model/LSTM.lua]:41_",
+		width=2.3354];
+	n13 -> n6	 [pos="e,549.82,937.23 594.96,979.89 583.3,968.87 570.02,956.33 557.26,944.27"];
+	n14	 [height=1.3356,
+		label="Node14\ninput = {}\lselectindex = 3\lreverseMap = {}",
+		pos="742,892",
+		tooltip="[./model/LSTM.lua]:35_-3",
+		width=2.1497];
+	n14 -> n7	 [pos="e,742,797.87 742,843.7 742,832.14 742,819.77 742,808.21"];
+	n15 -> n9	 [pos="e,670,319.84 670,356.37 670,347.93 670,338.83 670,330.01"];
+	n16	 [height=1.3356,
+		label="Node16\ninput = {}\lselectindex = 2\lreverseMap = {}",
+		pos="244,1136",
+		tooltip="[./model/LSTM.lua]:35_-2",
+		width=2.1497];
+	n16 -> n10	 [pos="e,226.58,1051.4 234.26,1088.3 232.41,1079.4 230.47,1070.1 228.62,1061.2"];
+	n17	 [height=1.3356,
+		label="Node17\ninput = {}\lselectindex = 2\lreverseMap = {}",
+		pos="94,1960",
+		tooltip="[[C]]:-1_-2",
+		width=2.1497];
+	n17 -> n11	 [pos="e,94,1763.5 94,1911.8 94,1871.4 94,1813.7 94,1773.6"];
+	n18	 [height=1.3356,
+		label="Node18\ninput = {}\lselectindex = 1\lreverseMap = {}",
+		pos="437,1136",
+		tooltip="[./model/LSTM.lua]:35_-1",
+		width=2.1497];
+	n18 -> n12	 [pos="e,432.83,1051.6 434.65,1087.9 434.22,1079.3 433.77,1070.4 433.34,1061.8"];
+	n19	 [height=1.3356,
+		label="Node19\ninput = {}\lselectindex = 4\lreverseMap = {}",
+		pos="618,1136",
+		tooltip="[./model/LSTM.lua]:35_-4",
+		width=2.1497];
+	n19 -> n13	 [pos="e,626.34,1051.6 622.71,1087.9 623.57,1079.3 624.46,1070.4 625.32,1061.8"];
+	n20	 [height=1.041,
+		label="Node20\nreverseMap = {}\lnSplitOutputs = 4",
+		pos="449,1258",
+		tooltip="[./model/LSTM.lua]:35_ split at [./model/LSTM.lua]:35-mnode",
+		width=2.2307];
+	n20 -> n14	 [pos="e,750.35,939.89 524.2,1244.7 590.57,1232.3 680.35,1211.1 704,1184 760.2,1119.6 759.06,1014.6 751.6,949.92"];
+	n20 -> n16	 [pos="e,299.57,1169.5 399.9,1228.3 372.52,1212.2 338.1,1192.1 308.57,1174.8"];
+	n20 -> n18	 [pos="e,441.71,1184.1 445.33,1220.3 444.5,1212 443.6,1203 442.71,1194.1"];
+	n20 -> n19	 [pos="e,567.74,1172.7 492.52,1226.1 512.9,1211.6 537.48,1194.2 559.46,1178.6"];
+	n21	 [height=1.041,
+		label="Node21\nreverseMap = {}\lnSplitOutputs = 3",
+		pos="284,2214",
+		tooltip="[[C]]:-1_ split at [...haozhang/torch/install/share/lua/5.1/nngraph/gmodule.lua]:96-mnode",
+		width=2.2307];
+	n21 -> n17	 [pos="e,114.59,2006.4 241.01,2181.9 226.03,2169.8 209.79,2155.3 197,2140 165.16,2102 137.66,2052.8 119.11,2015.6"];
+	n31	 [height=1.3356,
+		label="Node31\ninput = {}\lselectindex = 3\lreverseMap = {}",
+		pos="284,2092",
+		tooltip="[[C]]:-1_-3",
+		width=2.1497];
+	n21 -> n31	 [pos="e,284,2140.5 284,2176.3 284,2168.2 284,2159.4 284,2150.7"];
+	n32	 [height=1.3356,
+		label="Node32\ninput = {}\lselectindex = 1\lreverseMap = {}",
+		pos="477,2092",
+		tooltip="[[C]]:-1_-1",
+		width=2.1497];
+	n21 -> n32	 [pos="e,422.77,2126.7 331.21,2183.6 356.19,2168.1 387.18,2148.8 414.16,2132.1"];
+	n22	 [height=1.041,
+		label="Node22\nmodule = nn.SplitTable\lreverseMap = {}",
+		pos="449,1370",
+		tooltip="[./model/LSTM.lua]:35_",
+		width=2.8742];
+	n22 -> n20	 [pos="e,449,1295.8 449,1332.4 449,1323.9 449,1314.8 449,1306"];
+	n23	 [height=1.041,
+		label="Node23\ninput = {}\lreverseMap = {}",
+		pos="284,2326",
+		tooltip="[[C]]:-1_",
+		width=2.1497];
+	n23 -> n21	 [pos="e,284,2251.8 284,2288.4 284,2279.9 284,2270.8 284,2262"];
+	n24	 [height=1.041,
+		label="Node24\nmodule = nn.Reshape(4x30)\lreverseMap = {}",
+		pos="449,1482",
+		tooltip="[./model/LSTM.lua]:34_",
+		width=3.3935];
+	n24 -> n22	 [pos="e,449,1407.8 449,1444.4 449,1435.9 449,1426.8 449,1418"];
+	n25	 [height=1.3356,
+		label="Node25\nmodule = nn.CAddTable\lreverseMap = {}\lmapindex = {Node26,Node27}",
+		pos="449,1604",
+		tooltip="[./model/LSTM.lua]:32_",
+		width=3.7034];
+	n25 -> n24	 [pos="e,449,1519.7 449,1555.6 449,1547.1 449,1538.3 449,1529.8"];
+	n26	 [height=1.041,
+		label="i2h_1 (26)\nmodule = nn.Linear(10 -> 120)\lreverseMap = {}",
+		pos="478,1726",
+		tooltip="[./model/LSTM.lua]:30_",
+		width=3.7034];
+	n26 -> n25	 [pos="e,460.37,1652.1 469.14,1688.3 467.13,1680 464.95,1671 462.79,1662.1"];
+	n27	 [height=1.041,
+		label="h2h_1 (27)\nmodule = nn.Linear(30 -> 120)\lreverseMap = {}",
+		pos="277,1838",
+		tooltip="[./model/LSTM.lua]:31_",
+		width=3.7034];
+	n27 -> n25	 [pos="e,380.17,1645.4 285.03,1800.4 293.43,1768.3 309.08,1721.6 335,1688 345.37,1674.5 358.49,1662.3 372.11,1651.6"];
+	n28	 [height=1.041,
+		label="Node28\nmodule = OneHot\lreverseMap = {}",
+		pos="511,1838",
+		tooltip="[./model/LSTM.lua]:22_",
+		width=2.2781];
+	n28 -> n26	 [pos="e,489,1763.7 500.1,1800.7 497.48,1791.9 494.65,1782.5 491.91,1773.4"];
+	n29	 [height=1.041,
+		label="Node29\nmodule = nn.Identity\lreverseMap = {}",
+		pos="284,1960",
+		tooltip="[./model/LSTM.lua]:11_",
+		width=2.6117];
+	n29 -> n27	 [pos="e,279.15,1875.8 281.86,1922.3 281.2,1910.9 280.45,1898.2 279.75,1886.2"];
+	n30	 [height=1.041,
+		label="Node30\nmodule = nn.Identity\lreverseMap = {}",
+		pos="497,1960",
+		tooltip="[./model/LSTM.lua]:8_",
+		width=2.6117];
+	n30 -> n28	 [pos="e,506.75,1875.4 501.28,1922.3 502.63,1910.7 504.15,1897.7 505.58,1885.5"];
+	n31 -> n29	 [pos="e,284,1997.9 284,2043.7 284,2032.1 284,2019.8 284,2008.2"];
+	n32 -> n30	 [pos="e,491.36,1997.7 484.22,2044.1 486.04,2032.3 487.99,2019.6 489.8,2007.8"];
+}
