@@ -259,7 +259,7 @@ function feval(x)
     grad_params:zero()
 
     ------------------ get minibatch -------------------
-      x, y = loader:next_batch(1)
+    x, y = loader:next_batch(1)
     x,y = prepro(x,y)
     ------------------- forward pass -------------------
       rnn_state = {[0] = init_state_global}
@@ -279,7 +279,7 @@ function feval(x)
       drnn_state = {[opt.seq_length] = clone_list(init_state, true)} -- true also zeros the clones
     for t=opt.seq_length,1,-1 do
         -- backprop through loss, and softmax/linear
-          doutput_t = clones.criterion[t]:backward(predictions[t], y[t])
+        doutput_t = clones.criterion[t]:backward(predictions[t], y[t])
         table.insert(drnn_state[t], doutput_t)
           dlst = clones.rnn[t]:backward({x[t], unpack(rnn_state[t-1])}, drnn_state[t])
         drnn_state[t-1] = {}
